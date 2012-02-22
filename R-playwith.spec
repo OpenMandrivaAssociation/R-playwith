@@ -1,28 +1,27 @@
-%bcond_without bootstrap
+%bcond_with bootstrap
 %global packname  playwith
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
 Version:          0.9_53
-Release:          1
+Release:          2
 Summary:          A GUI for interactive plots using GTK+
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.9-53.tar.gz
 Requires:         R-lattice R-cairoDevice R-gWidgetsRGtk2 R-grid 
-Requires:         R-RGtk2 R-gWidgets R-gridBase R-grDevices R-graphics R-stats R-utils 
-%if %{with bootstrap}
-Requires:         R-zoo R-MASS R-ggplot2 R-sp 
-%else
-Requires:         R-latticist R-zoo R-MASS R-ggplot2 R-sp 
+Requires:         R-RGtk2 R-gWidgets R-gridBase R-grDevices R-graphics
+Requires:         R-stats R-utils R-zoo R-MASS R-ggplot2 R-sp
+%if %{without bootstrap}
+Requires:         R-latticist R-zoo R-MASS R-ggplot2 R-sp
 %endif
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-lattice R-cairoDevice R-gWidgetsRGtk2 R-grid
-BuildRequires:    R-RGtk2 R-gWidgets R-gridBase R-grDevices R-graphics R-stats R-utils 
-%if %{with bootstrap}
-BuildRequires:    R-zoo R-MASS R-ggplot2 R-sp 
-%else
-BuildRequires:    R-latticist R-zoo R-MASS R-ggplot2 R-sp 
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-lattice
+BuildRequires:    R-cairoDevice R-gWidgetsRGtk2 R-grid R-RGtk2 R-gWidgets
+BuildRequires:    R-gridBase R-grDevices R-graphics R-stats R-utils R-zoo
+BuildRequires:    R-MASS R-ggplot2 R-sp
+%if %{without bootstrap}
+BuildRequires:    R-ggplot2
 %endif
 BuildRequires:    x11-server-xvfb
 
