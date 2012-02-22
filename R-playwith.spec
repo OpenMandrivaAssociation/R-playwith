@@ -12,16 +12,16 @@ URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.9-53.tar.gz
 Requires:         R-lattice R-cairoDevice R-gWidgetsRGtk2 R-grid 
 Requires:         R-RGtk2 R-gWidgets R-gridBase R-grDevices R-graphics
-Requires:         R-stats R-utils R-zoo R-MASS R-ggplot2 R-sp
+Requires:         R-stats R-utils R-zoo R-MASS R-sp
 %if %{without bootstrap}
-Requires:         R-latticist R-zoo R-MASS R-ggplot2 R-sp
+Requires:         R-latticist
 %endif
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-lattice
 BuildRequires:    R-cairoDevice R-gWidgetsRGtk2 R-grid R-RGtk2 R-gWidgets
 BuildRequires:    R-gridBase R-grDevices R-graphics R-stats R-utils R-zoo
 BuildRequires:    R-MASS R-ggplot2 R-sp
 %if %{without bootstrap}
-BuildRequires:    R-ggplot2
+BuildRequires:    R-latticist
 %endif
 BuildRequires:    x11-server-xvfb
 
