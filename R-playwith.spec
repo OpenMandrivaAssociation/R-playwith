@@ -3,13 +3,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          0.9_53
-Release:          2
+Version:          0.9.54
+Release:          1
 Summary:          A GUI for interactive plots using GTK+
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.9-53.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/playwith_0.9-54.tar.gz
 Requires:         R-lattice R-cairoDevice R-gWidgetsRGtk2 R-grid 
 Requires:         R-RGtk2 R-gWidgets R-gridBase R-grDevices R-graphics
 Requires:         R-stats R-utils R-zoo R-MASS R-ggplot2 R-sp
