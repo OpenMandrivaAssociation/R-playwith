@@ -4,7 +4,7 @@
 
 Name:             R-%{packname}
 Version:          0.9.54
-Release:          1
+Release:          2
 Summary:          A GUI for interactive plots using GTK+
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
