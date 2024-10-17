@@ -8,7 +8,7 @@ Release:          2
 Summary:          A GUI for interactive plots using GTK+
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/playwith_0.9-54.tar.gz
 Requires:         R-lattice R-cairoDevice R-gWidgetsRGtk2 R-grid 
 Requires:         R-RGtk2 R-gWidgets R-gridBase R-grDevices R-graphics
